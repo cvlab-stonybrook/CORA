@@ -1,0 +1,23 @@
+# Settings shared by the four Cityscapes partitions. Everything not listed here keeps the default of cora/config.py:
+# three stages of 5,000 steps each (1: semantic and attribute instruction sets; 2: conditional instruction set with the
+# anchor encoders; 3: all labeled sets plus the unlabeled images, Eq. 9 with sigma 0.001 and K = 7), learning rate 2e-5,
+# 2 images per GPU on 4 GPUs.
+data:
+  dataset: cityscapes
+  ssl_method: semivl             # source of the pseudo-labels of the unlabeled images
+  clip_preprocess: center_crop   # the CLIP view the LISA checkpoint was trained with
+  reasonseg_train_share: 0.25    # 1 labeled sample in 4 is drawn from the ReasonSeg train split, in every stage
+model:
+  # Starting weights: the released LISA-7B-v1 checkpoint, converted by tools/convert_lisa.py
+  llava: pretrained/lisa-7b-v1/llava
+  text_hidden_fcs_init: pretrained/lisa-7b-v1/text_hidden_fcs.pt
+  pretrained_seg_token: true
+  # Trained: LoRA and the mask decoder (Fig. 3 of the paper), plus the anchor encoders from stage 2 on
+  train_embeddings: false
+  train_seg_projection: false
+paths:
+  sam_checkpoint: pretrained/lisa-7b-v1/sam_vit_h_lisa.pth
+eval:
+  # The validation at the end of every stage uses an evenly spread subset of the validation instructions;
+  # tools/evaluate.py scores the complete sets.
+  stage_max_samples: 2000

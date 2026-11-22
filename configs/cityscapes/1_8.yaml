@@ -1,0 +1,6 @@
+# Cityscapes with 1/8 of the training images labeled (372 images).
+_base_: base.yaml
+data:
+  partition: "1_8"
+train:
+  run_name: cityscapes_1_8

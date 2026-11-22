@@ -1,0 +1,371 @@
+{
+  "dataset": "cityscapes",
+  "classes": {
+    "0": {
+      "name": "road",
+      "queries": [
+        "Segment the paved asphalt surface that motor traffic drives on.",
+        "Segment all the drivable tarmac with painted lane markings.",
+        "Segment the dark, flat bituminous ground that vehicles travel over in cities.",
+        "Can you segment every stretch of smooth paved ground reserved for motor vehicle travel?",
+        "Segment the street surface marked with white and yellow lines and zebra-crossing stripes.",
+        "Please segment the wide asphalt carriageways that motorists use to get from place to place.",
+        "Segment the flat, durable ground covering that traffic lanes are made of.",
+        "Segment the broad, level, tar-sealed ground on which engine-driven vehicles move through the street scene.",
+        "Segment the tarred driving lanes of streets and highways.",
+        "Segment every smooth bituminous lane that drivers follow when travelling through town.",
+        "Segment the grey surface carrying lane dividers, direction arrows and crossing stripes.",
+        "Segment the part of the ground that is engineered for motorised traffic to roll over at speed.",
+        "Segment the durable dark surface that is spread out for wheeled traffic.",
+        "Segment the traffic lanes and intersections that make up the paved driving network of a city."
+      ]
+    },
+    "1": {
+      "name": "sidewalk",
+      "queries": [
+        "Segment the raised paved walkways that foot travellers use, kept apart from motor traffic by a curb.",
+        "Segment all the footpaths where walkers stroll.",
+        "Segment all paved footways made for walking, with paving slabs or bricks.",
+        "Can you segment the curbed strips of concrete or paving stones set aside for those travelling on foot?",
+        "Segment every slab-paved path that lines a street and is meant for travellers on foot.",
+        "Please segment the elevated walking paths that sit higher than the driving surface.",
+        "Segment the brick or concrete pavements for foot traffic.",
+        "Segment all the paved ground meant for walkers, including small ramps at the curbs.",
+        "Segment the hard-surfaced promenades that walkers use in towns, with tiles or slabs underfoot.",
+        "Segment the narrow paved lanes for foot travel that are raised higher than the driving lanes by a kerb.",
+        "Segment all the paved areas built for walking and for waiting for a ride.",
+        "Segment the footpath tiles and kerbstones made for slow, on-foot movement in urban areas.",
+        "Segment the stretches of paving stones in a city that are closed to motor vehicles.",
+        "Segment all the paved strips that walkers use to travel safely away from vehicles."
+      ]
+    },
+    "2": {
+      "name": "building",
+      "queries": [
+        "Segment the large man-made structures with roofs, windows and doors where residents and employees live and work.",
+        "Segment all the multi-storey houses and apartment blocks.",
+        "Segment the brick, concrete or glass structures with windows and roofs that shelter occupants.",
+        "Can you segment the shops, offices and dwellings that make up the urban skyline?",
+        "Segment the enclosed constructions that have floors, facades and rooflines.",
+        "Segment every residential and commercial structure, from townhouses to office towers.",
+        "Segment the architectural structures with window grids and balconies.",
+        "Please segment all the garages, stations and sheds with solid roofs.",
+        "Segment the tall stone and concrete facades made for housing and business.",
+        "Segment the permanent dwellings and commercial premises erected by builders and architects.",
+        "Segment the roofed edifices of a town, such as terraced houses, churches and warehouses.",
+        "Segment all the enclosed structures with doors that lead to rooms and staircases.",
+        "Segment the plastered or brick facades pierced by rows of windows.",
+        "Segment all the housing blocks and commercial premises that make up the streetscape."
+      ]
+    },
+    "3": {
+      "name": "wall",
+      "queries": [
+        "Segment the freestanding stone or brick barriers that enclose gardens and yards.",
+        "Segment the solid masonry partitions that mark property boundaries and have no windows or doors.",
+        "Segment all the continuous concrete or brick barriers that block the view completely.",
+        "Can you segment the continuous, opaque barriers made of stone or concrete blocks that close off a plot?",
+        "Segment the high, solid enclosures of stone, concrete or brick that divide a property from its neighbours.",
+        "Segment the opaque masonry boundary structures that have no windows, doors or roofs.",
+        "Segment the thick, solid barriers built from blocks and mortar to shut off a plot.",
+        "Segment all the plain, windowless masonry panels used to bound courtyards and lots.",
+        "Segment the noise barriers and boundary partitions made of brick, stone or poured concrete.",
+        "Segment the solid retaining and boundary partitions that are freestanding barriers of stone or concrete.",
+        "Please segment the masonry enclosures of gardens, cemeteries and parks.",
+        "Segment all the plain concrete or stone slabs that form a solid screen.",
+        "Segment the low or tall masonry dividers made of bricks, cobbles or poured cement.",
+        "Segment the old stone boundary structures of estates and farms."
+      ]
+    },
+    "4": {
+      "name": "fence",
+      "queries": [
+        "Segment the lightweight barriers made of wooden slats, wire mesh or metal bars that mark a boundary.",
+        "Segment all the barriers made of slender pickets, wire links or bars that you can see through.",
+        "Segment the see-through boundary structures made of posts and crossbars.",
+        "Can you segment the wooden panels and metal grilles that keep animals or visitors out?",
+        "Segment the garden barriers built from timber boards or wire.",
+        "Segment every railing, lattice screen and gate-bearing barrier made of slender bars.",
+        "Segment the permeable partitions of wire netting stretched on supports.",
+        "Segment the metal grilles and wooden palings used as cheap property boundaries.",
+        "Segment the lines of pickets and bars that walkers cannot easily get through.",
+        "Segment all the pasture and yard enclosures made of planks or wire.",
+        "Segment the light barricades made of crossbars, pickets or mesh.",
+        "Segment the open-work metal or wooden barrier structures with slits that let light through.",
+        "Segment the iron bars and mesh screens that keep trespassers out of private plots.",
+        "Segment all the thin boundary barriers constructed of boards, wires or bars that leave gaps."
+      ]
+    },
+    "5": {
+      "name": "pole",
+      "queries": [
+        "Segment the thin vertical posts that hold up street lamps or electrical wires.",
+        "Segment all the slender upright metal or wooden shafts that carry wires and lighting fixtures.",
+        "Segment the narrow columns that support lamps, cables and street fixtures.",
+        "Can you segment every tall, thin, cylindrical post planted in the ground?",
+        "Segment the lamp standards, telegraph posts and utility columns.",
+        "Segment the steel tubes standing upright to hold lamps and cables off the ground.",
+        "Segment the slim vertical supports of electric wires and lighting.",
+        "Segment all the stick-like upright structures used for mounting lamps, cameras and cables.",
+        "Please segment the tapered concrete or metal masts that carry power lines.",
+        "Segment the narrow upright shafts that are tall relative to their width.",
+        "Segment the street-lighting and electricity-line supports.",
+        "Segment the thin cylindrical posts that carry the equipment used to run street infrastructure.",
+        "Segment the vertical bars of metal that are planted in the ground to hold lamps or wires.",
+        "Segment every utility mast made of wood, steel or concrete."
+      ]
+    },
+    "6": {
+      "name": "traffic light",
+      "queries": [
+        "Segment the boxes with red, amber and green lamps that tell motorists when to stop and go.",
+        "Segment all the signal heads that cycle through red, yellow and green.",
+        "Segment the illuminated colour-changing signals used to regulate junction crossing.",
+        "Can you segment the lamp units that show stop, wait and go colours?",
+        "Segment the electric signalling lamps mounted in housings to control the flow of vehicles and walkers.",
+        "Segment every dark casing containing coloured bulbs that alternate to grant passage.",
+        "Segment the lit-up units with stacked coloured discs.",
+        "Segment the signalling devices that regulate junctions by switching colours.",
+        "Segment the red-amber-green lamp assemblies used for controlling crossings.",
+        "Segment all the boxes of LEDs that glow red to demand a halt and green to permit movement.",
+        "Please segment the pedestrian and vehicle crossing signal lamps.",
+        "Segment the colour-coded lamps that organise the order in which streams of vehicles move.",
+        "Segment the coloured-lamp signal heads that govern intersections.",
+        "Segment all the compact lamp housings that switch from red to green on a timer."
+      ]
+    },
+    "7": {
+      "name": "traffic sign",
+      "queries": [
+        "Segment the flat metal plates with symbols, arrows or numbers that tell drivers about rules and hazards.",
+        "Segment all the regulatory and warning boards, such as speed limits and stop signs.",
+        "Segment the triangular, circular and rectangular plates that carry pictograms for drivers.",
+        "Can you segment the reflective panels giving instructions such as give way, no entry or speed limits?",
+        "Segment the posted notices with driving rules, directions and place names.",
+        "Segment the colourful emblem boards erected to guide and warn motorists.",
+        "Segment the coloured plates bearing symbols that regulate driving.",
+        "Segment all the information plaques that tell travellers the allowed speed, the route, or a danger.",
+        "Segment the instruction and hazard-warning plates, of whatever shape, that drivers must obey.",
+        "Segment the directional boards that name destinations.",
+        "Segment the highway code plates, such as priority, parking and prohibition symbols.",
+        "Segment the rule-conveying panels with pictograms and reflective borders.",
+        "Segment the signboards that give drivers instructions through icons and short text.",
+        "Segment every enamelled or reflective plate that communicates traffic regulations through pictograms."
+      ]
+    },
+    "8": {
+      "name": "vegetation",
+      "queries": [
+        "Segment the leafy canopies and trunks of woody plants.",
+        "Segment all the trees, bushes and hedges with green foliage.",
+        "Segment the dense green foliage made of leaves and branches.",
+        "Can you segment the woody plants that grow tall with trunks and branches?",
+        "Segment the shrubs, hedgerows and leafy tree crowns that provide shade.",
+        "Segment every plant with a woody stem, from clipped hedges to big oaks and maples.",
+        "Segment the bushy greenery formed by foliage, twigs and trunks.",
+        "Segment the parts of the scene made up of leaves swaying in the wind on branches.",
+        "Segment all the forest and garden shrubbery and tree growth.",
+        "Segment the evergreen and deciduous plants that stand upright on trunks or woody stems.",
+        "Segment the botanical elements: leaves, branches, shrubs and tree trunks.",
+        "Please segment all the woody, leaf-bearing plant growth.",
+        "Segment the clipped hedges and tall shade trees that give cities green cover.",
+        "Segment the natural green masses made of boughs and leaves that shed in autumn."
+      ]
+    },
+    "9": {
+      "name": "terrain",
+      "queries": [
+        "Segment the low grass, lawns and meadows that carpet the ground.",
+        "Segment all the bare soil, sand, dirt and gravelly earth.",
+        "Segment the short, mown turf and weedy ground cover.",
+        "Can you segment the natural ground surfaces such as grass fields, mud and dry soil?",
+        "Segment the unpaved earthy ground with sparse grass tufts.",
+        "Segment the grassy verges and meadow ground that is cut with a mower.",
+        "Segment the hillside slopes covered with turf and loose earth.",
+        "Segment every stretch of ground that is soil, sand or short grass blades rather than paving.",
+        "Segment the natural, soft ground in parks and fields where you could sit on the lawn.",
+        "Segment the lawn-like ground and exposed dirt patches of open land.",
+        "Segment all the uncultivated and cultivated ground made of grass, clay or sand.",
+        "Segment the earth and herbaceous ground plants that form the natural floor of open spaces.",
+        "Segment the pasture, turf and dirt areas.",
+        "Segment the unsealed natural ground, including grass patches, dust and earth banks."
+      ]
+    },
+    "10": {
+      "name": "sky",
+      "queries": [
+        "Segment the blue, grey or white expanse of air, including clouds.",
+        "Segment all the clouds and open air that stretch to the horizon.",
+        "Segment the heavens: clear blue, overcast grey or sunset orange.",
+        "Can you segment the part of the scene made of clouds, haze and open atmosphere?",
+        "Segment the vast gradient that is lit by the sun and holds the clouds.",
+        "Segment the airy region where birds and aircraft fly, with its clouds and sunlight.",
+        "Segment every pixel of the atmosphere, whether cloudy, clear or hazy.",
+        "Segment the weather-dependent expanse that changes from blue by day to dark at dusk.",
+        "Segment the unobstructed open air with its cloud formations.",
+        "Please segment the grey overcast or sunny blue canopy of air.",
+        "Segment the illuminated dome of gases that bends the sun's light into blue.",
+        "Segment all the cloud cover, blue gaps and haze visible as bright, textureless areas.",
+        "Segment the region where rain, snow and clouds originate.",
+        "Segment the smooth, bright, featureless expanse of daylight air."
+      ]
+    },
+    "11": {
+      "name": "person",
+      "queries": [
+        "Segment the human beings who are not on any vehicle.",
+        "Segment all the pedestrians, including children, adults and the elderly who are not on any vehicle.",
+        "Segment the people in everyday clothes, from toddlers to elderly adults.",
+        "Can you segment the human figures that travel by foot rather than on any vehicle?",
+        "Segment every upright human with a head, torso and legs who is on foot.",
+        "Segment the individuals on foot, such as commuters, tourists and kids.",
+        "Segment all the men, women and children moving on their own legs.",
+        "Segment the pedestrians of all ages, from children to the elderly.",
+        "Segment the faces, clothes and bodies of human beings who are on foot.",
+        "Segment all the bipedal humans, including children and adults.",
+        "Segment all the pedestrians and bystanders seen in the street scene.",
+        "Segment every human, young or old, who is visible in the scene.",
+        "Segment the figures of adults and children who travel on foot.",
+        "Segment all the foot travellers on the streets and pavements."
+      ]
+    },
+    "12": {
+      "name": "rider",
+      "queries": [
+        "Segment the human figures sitting astride saddles and gripping handlebars.",
+        "Segment all the cyclists and motorcyclists seen in the scene.",
+        "Segment the humans sitting on and steering machines by their handlebars.",
+        "Can you segment the humans perched on saddles, including their arms and legs?",
+        "Segment every human who is mounted on a saddle-seated vehicle, not including the vehicle itself.",
+        "Segment the cyclists and motorcyclists hunched over handlebars.",
+        "Segment the humans who sit upright on a saddle and steer a two-wheeled vehicle with their hands.",
+        "Segment all the humans balancing on narrow-wheeled vehicles.",
+        "Segment the drivers of small motorised vehicles with handlebars.",
+        "Segment the humans in a riding posture who steer with handlebars.",
+        "Please segment the bodies of humans who sit in a saddle and hold handlebars.",
+        "Segment all the humans seated on two-wheeled vehicles, motorised or not.",
+        "Segment the humans mounted on two-wheelers, from head to toe.",
+        "Segment the human drivers of light, narrow vehicles with handlebars."
+      ]
+    },
+    "13": {
+      "name": "car",
+      "queries": [
+        "Segment the sedan used for daily commute.",
+        "Segment all small, low-height vehicles typically used for personal transportation.",
+        "Segment the family-sized passenger automobiles used for everyday errands.",
+        "Segment the passenger automobiles with a trunk, hood and wheels, whether parked or driving.",
+        "Can you segment the privately owned automobiles used to ferry a household?",
+        "Segment every compact motor vehicle with a closed cabin built for few occupants.",
+        "Segment the passenger automobiles that carry commuters on short trips.",
+        "Segment the street-legal passenger machines with headlights, licence plates and rubber tyres.",
+        "Segment the four-wheeled vehicles designed for everyday private transport.",
+        "Segment all the light private motor vehicles that seat a household.",
+        "Segment the electric and petrol automobiles used by families to get to work.",
+        "Segment the automobiles that fill city streets, parked or in motion.",
+        "Segment all the private motor vehicles you would use to drive to the shops or the office.",
+        "Segment the personal passenger vehicles that households drive to work or on holiday."
+      ]
+    },
+    "14": {
+      "name": "truck",
+      "queries": [
+        "Segment the heavy goods lorries that haul cargo.",
+        "Segment all the large freight haulers with a cab and a cargo box.",
+        "Segment the heavy-duty vehicles with an open or boxed load area separate from the driver's cabin.",
+        "Can you segment the oversized goods-carrying motor vehicles with big cargo compartments?",
+        "Segment the heavy haulers used to ship bulk materials and packaged goods.",
+        "Segment every commercial vehicle whose load bed is separate from the driver cab.",
+        "Segment the vehicles and trailers built to carry heavy loads.",
+        "Segment the heavy commercial motor vehicles with big tyres and cargo boxes for moving freight.",
+        "Segment the commercial vehicles that haul heavy loads to construction sites and warehouses.",
+        "Segment all the big rigs and lorries.",
+        "Please segment the long, high-sided load-bearing vehicles that bring goods to depots.",
+        "Segment the work vehicles with load beds, used for shipping goods from warehouses to shops.",
+        "Segment the massive wheeled carriers with a driver's cab and separate cargo space.",
+        "Segment the utility haulers that carry cargo, tools or construction materials."
+      ]
+    },
+    "15": {
+      "name": "bus",
+      "queries": [
+        "Segment the long public transport vehicles with many seats and a row of windows.",
+        "Segment all the public transit vehicles carrying numerous passengers.",
+        "Segment the big boxy transit machines with route displays and wide doors.",
+        "Can you segment the municipal vehicles that stop at designated places for travellers to hop on?",
+        "Segment the city passenger carriers with high roofs and windows.",
+        "Segment every tall, long, wheeled shuttle designed to carry many commuters at once.",
+        "Segment the high-capacity mass-transit vehicles on tyres.",
+        "Segment the large vehicles on tyres that run timetabled routes.",
+        "Segment the shuttle-type vehicles that carry groups of travellers from stop to stop.",
+        "Segment the passenger carriers with numbered route displays and several doors.",
+        "Segment all the vehicles with long passenger compartments, designed for group travel.",
+        "Segment the tall motor vehicles that transport dozens of travellers.",
+        "Please segment the large mass-transit motor vehicles.",
+        "Segment the passenger conveyances that follow fixed timetables on streets, with many windows."
+      ]
+    },
+    "16": {
+      "name": "train",
+      "queries": [
+        "Segment the rail-bound passenger vehicles that run on steel tracks.",
+        "Segment all the trams, streetcars and railway carriages.",
+        "Segment the long chains of coupled carriages pulled by locomotives.",
+        "Can you segment the light-rail vehicles that draw power from wires and glide on steel rails?",
+        "Segment the metro and commuter railcars.",
+        "Segment every guided vehicle that runs on rails, such as trams and locomotives.",
+        "Segment the electric multiple units used on railway lines.",
+        "Segment the carriages on iron rails that stop at platforms.",
+        "Segment the steel-wheeled public transport vehicles confined to tracks.",
+        "Segment the streetcars with pantographs that connect to power lines.",
+        "Segment the heavy rolling stock hauled by diesel or electric locomotives.",
+        "Please segment the express carriages and freight wagons running on rails.",
+        "Segment the cable-powered city transit carriages bound to tracks.",
+        "Segment all the vehicles made of linked carriages that depart from stations."
+      ]
+    },
+    "17": {
+      "name": "motorcycle",
+      "queries": [
+        "Segment the engine-powered cycles with handlebars and a saddle.",
+        "Segment all the motorbikes, mopeds and scooters.",
+        "Segment the motorised bikes with a fuel tank and exhaust pipe.",
+        "Can you segment the petrol-driven machines that are steered by handlebars and powered by combustion engines?",
+        "Segment every machine with a combustion engine, a saddle and a kickstand that rides on narrow tyres.",
+        "Segment the powered vehicles with a narrow frame, a seat, and throttle grips.",
+        "Segment the engine-driven machines with a saddle, handlebars and a kickstand.",
+        "Segment the light motorised machines with a kickstand and mirrors.",
+        "Segment the lightweight engine-driven machines with wheels in line, supported by a kickstand when parked.",
+        "Segment the fast, narrow motorised cycles that carry a small licence plate.",
+        "Please segment the saddle-seated machines powered by internal combustion or batteries.",
+        "Segment all the motor-driven vehicles that balance on narrow tyres and have a throttle.",
+        "Segment the machines with a petrol tank, exhaust and engine casing exposed to the air.",
+        "Segment the machines that have a motor, saddle and handlebars."
+      ]
+    },
+    "18": {
+      "name": "bicycle",
+      "queries": [
+        "Segment the pedal-powered cycles with a chain, saddle and spoked wheels.",
+        "Segment all the human-powered bikes with handlebars and slim tyres.",
+        "Segment the machines with pedals, a frame and a chain drive that move forward by leg power alone.",
+        "Can you segment the cycles used for eco-friendly commuting and exercise?",
+        "Segment every wheeled frame with pedals and brake levers that is propelled by leg power.",
+        "Segment the mountain bikes, city bikes and racing cycles with spokes.",
+        "Segment the vehicles with handlebars, a saddle and brake cables.",
+        "Segment the leg-driven bikes with thin wheels with spokes.",
+        "Segment the everyday commuter bikes.",
+        "Segment the pushbikes with a frame, chain and saddle.",
+        "Please segment all the cycling machines moved by pedals and gears.",
+        "Segment the slender lightweight rides that are propelled by leg power.",
+        "Segment the spoked-wheel vehicles with slim tyres and a chain.",
+        "Segment the frame-and-spoke vehicles with a chain-driven wheel."
+      ]
+    }
+  },
+  "meta": {
+    "source": "hand-written",
+    "description": "Per-class query database D (paper Sec. 3.2.1, Fig. 3) for the 19 Cityscapes classes; every query selects the whole class from appearance and function, see cora/data/query_db.py for the rules.",
+    "queries_per_class": 14
+  }
+}

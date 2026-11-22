@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# created locally; never commit (Cityscapes annotations and other downloaded or derived data)
+/data/cityscapes/objects/
+/data/cityscapes/pseudo/
+/data/cityscapes/query_db.json
+/data/reasonseg/
+/datasets/
+/downloads/
+/pretrained/
+/outputs/
+/envs/
+/third_party/
