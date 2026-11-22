@@ -1,6 +1,6 @@
 # CORA: Consistency-Guided Semi-Supervised Framework for Reasoning Segmentation
 
-Code for training and evaluating CORA ([arXiv:2511.17755](https://arxiv.org/abs/2511.17755)). 
+Code for training and evaluating CORA ([CORA:WACV2026]([https://arxiv.org/abs/2511.17755](https://openaccess.thecvf.com/content/WACV2026/papers/Howlader_CORA_Consistency-Guided_Semi-Supervised_Framework_for_Reasoning_Segmentation_WACV_2026_paper.pdf))). 
 
 CORA is a reasoning-segmentation model in the style of LISA: a multimodal LLM (LLaVA) emits a `<SSEG>` token whose
 hidden state prompts the SAM mask decoder. It is trained with a small labeled fraction of Cityscapes, instruction sets
