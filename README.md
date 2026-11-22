@@ -9,15 +9,18 @@ semi-supervised segmenter. For unlabeled images the pseudo-label loss of every p
 model's own predictions are across rephrasings of the same query, and the `<SSEG>` features of unlabeled images are
 aligned with those of labeled images of the same class.
 
+### Contact
+If you have any questions, please email Prantik Howlader at phowlader@cs.stonybrook.edu.
+
 ## What this repository trains
 
 | | |
 |---|---|
 | Starting weights | the released LISA-7B-v1 checkpoint (`xinlai/LISA-7B-v1`), converted by `tools/convert_lisa.py` |
 | Trained parts | LoRA (rank 8, `q_proj` and `v_proj`) and the SAM mask decoder; from stage 2 on also the anchor encoders. Everything else is frozen |
-| Stage 1 (5,000 steps) | labeled images: semantic and attribute instruction sets |
-| Stage 2 (5,000 steps) | labeled images: conditional instruction set, with the anchor mask and box encoders |
-| Stage 3 (5,000 steps) | all labeled sets plus the unlabeled images: pseudo-label loss with per-pixel consistency weights over K = 7 rephrasings, summed over pixels with weight 0.001, and the token-level contrastive alignment |
+| Stage 1  | labeled images: semantic and attribute instruction sets |
+| Stage 2  | labeled images: conditional instruction set, with the anchor mask and box encoders |
+| Stage 3 | all labeled sets plus the unlabeled images: pseudo-label loss with per-pixel consistency weights over K = 7 rephrasings, summed over pixels with weight 0.001, and the token-level contrastive alignment |
 | Pseudo-labels | SemiVL, the public checkpoint of each partition |
 | ReasonSeg | 1 labeled sample in 4 is drawn from the ReasonSeg train split, in every stage |
 | Optimisation | AdamW, learning rate 2e-5 with linear warm-up and decay, batch 8 (2 images on each of 4 GPUs) |
@@ -149,11 +152,13 @@ tests/        unit tests (CPU, tiny model):  python -m pytest -q
 ## Citation
 
 ```bibtex
-@article{howlader2025cora,
-  title   = {CORA: Consistency-Guided Semi-Supervised Framework for Reasoning Segmentation},
-  author  = {Howlader, Prantik and Nguyen-Canh, Hoang and Das, Srijan and Xu, Jingyi and Le, Hieu and Samaras, Dimitris},
-  journal = {arXiv preprint arXiv:2511.17755},
-  year    = {2025}
+@InProceedings{Howlader_2026_WACV,
+    author    = {Howlader, Prantik and Nguyen-Canh, Hoang and Das, Srijan and Xu, Jingyi and Le, Hieu and Samaras, Dimitris},
+    title     = {CORA: Consistency-Guided Semi-Supervised Framework for Reasoning Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {March},
+    year      = {2026},
+    pages     = {5934-5944}
 }
 ```
 
