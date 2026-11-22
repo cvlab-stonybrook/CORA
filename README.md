@@ -1,6 +1,6 @@
 # CORA: Consistency-Guided Semi-Supervised Framework for Reasoning Segmentation
 
-Code for training and evaluating CORA ([arXiv:2511.17755](https://arxiv.org/abs/2511.17755)) on Cityscapes.
+Code for training and evaluating CORA ([arXiv:2511.17755](https://arxiv.org/abs/2511.17755)). 
 
 CORA is a reasoning-segmentation model in the style of LISA: a multimodal LLM (LLaVA) emits a `<SSEG>` token whose
 hidden state prompts the SAM mask decoder. It is trained with a small labeled fraction of Cityscapes, instruction sets
@@ -125,7 +125,6 @@ configs/cityscapes/1_16.yaml --check` verifies the data and settings without bui
 
 ```bash
 bash scripts/evaluate.sh configs/cityscapes/1_16.yaml --num-gpus 4                    # Cityscapes validation sets
-bash scripts/evaluate.sh configs/cityscapes/1_16.yaml --num-gpus 4 --reasonseg test   # ReasonSeg test
 ```
 
 Results are printed as cIoU and gIoU per instruction set and saved under `outputs/cityscapes_1_16/eval/`.
@@ -144,6 +143,9 @@ data/         the instruction sets for Cityscapes (data/cityscapes/README.md)
 tests/        unit tests (CPU, tiny model):  python -m pytest -q
 ```
 
+
+
+
 ## Citation
 
 ```bibtex
@@ -155,10 +157,4 @@ tests/        unit tests (CPU, tiny model):  python -m pytest -q
 }
 ```
 
-## Acknowledgements
 
-This code builds on [LISA](https://github.com/dvlab-research/LISA) (model design, prompt templates and loss
-functions, Apache-2.0), [Segment Anything](https://github.com/facebookresearch/segment-anything) (Apache-2.0),
-[LLaVA](https://github.com/haotian-liu/LLaVA), SegLLM (anchor encoders), GLUS (token-level alignment),
-[SemiVL](https://github.com/google-research/semivl) and [UniMatch](https://github.com/LiheYoung/UniMatch)
-(pseudo-labels). Cityscapes and ReasonSeg are subject to their own terms of use.
